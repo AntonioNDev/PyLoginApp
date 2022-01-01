@@ -1,20 +1,18 @@
 import sqlite3
 import os
 
-databasePath = 'C:/Users/Antonio/Documents/PyApp'
+databasePath = 'C:/Users/Antonio/Documents/PyLoginApp'
 conn = sqlite3.connect(f'{databasePath}/database.db')
 cur = conn.cursor()
 
+
 #Create table 
 def createTable():
-   cur.execute("""CREATE TABLE users (
+   cur.execute("""CREATE TABLE IF NOT EXISTS users (
          username TEXT NOT NULL,
          password TEXT NOT NULL 
       );""")
-   conn.commit()
-   cur.close()
    print('table created')
-
 
 #Write data
 def writeData(x1,x2):

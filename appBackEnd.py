@@ -3,7 +3,7 @@ import datetime
 from tkinter import messagebox as mb
 import database as db
 
-logging.basicConfig(filename='C:/Users/Antonio/Documents/PyApp/app.log', level=logging.INFO, format='%(levelname)s-%(message)s')
+logging.basicConfig(filename='C:/Users/Antonio/Documents/PyLoginApp/appLogs.log', level=logging.INFO, format='%(levelname)s-%(message)s')
 date = datetime.datetime.now().strftime('[%d/%m/%Y|%H:%M:%S]')
 
 class App:

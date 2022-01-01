@@ -1,10 +1,12 @@
 from tkinter import *
 from tkinter import ttk
 from appBackEnd import *
-from database import checkData, deleteRecord, displayData
+from database import checkData, deleteRecord, displayData, createTable
 
 root = Tk()
 root.title('SimpleApp')
+createTable()
+
 
 #width and height of the window
 def GUIGeometrics():

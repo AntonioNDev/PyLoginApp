@@ -1,2 +1,2 @@
 # PyLoginApp
-Python login application with a database&amp;tkinter.
+Simple GUI app with SQLite database and Tkinter.

@@ -1,8 +1,10 @@
 import sqlite3
 import os
 
-databasePath = 'C:/Users/Antonio/Documents/PyLoginApp'
-conn = sqlite3.connect(f'{databasePath}/database.db')
+
+currentPath = os.path.dirname(os.path.abspath(__file__))
+
+conn = sqlite3.connect(f'{currentPath}/database.db')
 cur = conn.cursor()
 
 

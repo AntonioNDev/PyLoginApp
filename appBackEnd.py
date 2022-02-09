@@ -1,10 +1,14 @@
 import logging
 import datetime
+import os
 from tkinter import messagebox as mb
 import database as db
 
-logging.basicConfig(filename='C:/Users/Antonio/Documents/PyLoginApp/appLogs.log', level=logging.INFO, format='%(levelname)s-%(message)s')
+
+currentPath = os.path.dirname(os.path.abspath(__file__))
+logging.basicConfig(filename=f'{currentPath}/appLogs.log', level=logging.INFO, format='%(levelname)s-%(message)s')
 date = datetime.datetime.now().strftime('[%d/%m/%Y|%H:%M:%S]')
+
 
 class App:
     def __init__(self, username, passowrd):
